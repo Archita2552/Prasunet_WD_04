@@ -1,0 +1,205 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'poppins','sans-serif';
+}
+body
+{
+color:#ededed;
+background-color: black;
+}
+.header{
+  top:0;
+  left:0;
+  padding:20px 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background: black
+    
+}
+.logo{
+    position:relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    display:inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color: aqua;
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+img{
+    border-radius: 60%;
+    height: 340px;
+    width:350px;
+    padding-right: 2%;
+}
+.home-content h3{
+font-size: 32px;
+font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.home-content h3 span{
+    color:aqua;
+}
+
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin:-3px 0;
+    }
+    .home-content p{
+        font-size:20px;
+    }
+    .home-sci {
+        padding-top: 10px;
+    }
+
+    .home-sci a{
+        display:inline-flex;
+        text-decoration: none;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        background: transparent;
+        border: 0.1px solid aqua;
+        border-radius: 50%;
+        margin:30px 15px 30px 0;
+        padding-left: 8px;
+        box-shadow: 0 0 5px cyan,0 0 25px cyan;
+    }
+    .home-sci a:hover{
+background: aqua;
+color: black;
+box-shadow: 0 0 20px aqua;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5em;
+        padding-bottom: 6em;
+
+    }
+.about-heading h1{
+font-size:60px ;
+padding-bottom: 20%;
+text-align: center;
+
+    }
+.about-heading h1 span{
+    color:aqua;
+    }
+
+.about{
+    background-color: black;
+    color: white;
+}
+.about-text h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    line-height: 1.7;
+    margin: 15px 0 15px;
+}
+.about-text p,ul{
+   color: rgb(221, 221, 197);
+   font-size: 20px;
+   line-height: 1.4;
+   margin-bottom: 3rem;
+}    
+#services{
+    color:aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+
+}
+.sub-title h2{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 30px;
+
+}
+.sub-title h2 span{
+    color: aqua;
+}
+.sub-title p{
+    text-align: center;
+    font-size: 25px;
+    padding: 12px 15px 20px;
+}
+.container{
+padding:90px;
+
+}
+.service-list h2{
+    text-align: center;
+    line-height: 2.4em;
+}
+.service-list{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    /* margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px; */
+    margin:50px 20px 40px;
+}
+.service-list div{
+    align-items: center;
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-radius: 20px;
+    border-right: 20px;
+    transition:background 0.5s,transform 0.5s;
+    box-shadow:1px 1px 20px cyan ;
+}
+.contact h2 {
+    text-align: center;
+    line-height: 4rem;
+    font-size: 30px;
+}
+.contact h2 span{
+    color: aqua;
+}
+.contact-text{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
