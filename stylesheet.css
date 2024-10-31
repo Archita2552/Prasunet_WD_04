@@ -221,6 +221,8 @@ ul {
 }
 
 /* Responsive Styles */
+
+
 @media (max-width: 1200px) {
     .navbar a {
         font-size: 20px;
@@ -241,7 +243,7 @@ ul {
     }
 }
 
-@media (max-width: 992px) {
+ @media (max-width: 992px) {
     .header {
         padding: 15px 5%;
     }
@@ -249,6 +251,8 @@ ul {
     .home {
         flex-direction: column;
         align-items: center;
+        padding-top: 100px;
+        text-align: center;
     }
 
     .home-content {
@@ -257,16 +261,19 @@ ul {
 
     img {
         margin-bottom: 20px;
-        width: 80%; /* Make image responsive */
+        width: 80%; 
+        height: auto; 
     }
 
     .about {
-        grid-template-columns: 1fr; /* Stack items vertically */
+        grid-template-columns: 1fr; 
         padding: 20px 5%;
+        margin-top: 40px;
     }
 
     .about-heading h1 {
         font-size: 50px;
+        margin-bottom: 20px; 
     }
 
     .about-text h2,
@@ -282,11 +289,54 @@ ul {
     .sub-title p {
         font-size: 20px;
     }
-}
+} 
 
-@media (max-width: 768px) {
-   .service-list {
-        grid-template-columns: 1fr; /* Stack services vertically */
+ @media (max-width: 768px) {
+    .navbar a {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .home-content h3 {
+        font-size: 25px;
+    }
+
+    img {
+        width: 250px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .home-sci {
+        margin-top: 50px; 
+        gap: 10px;
+    }
+
+    .about {
+        padding: 40px 5%;
+        margin-top: 60px; 
+        margin-bottom: 30px; 
+    }
+
+    .about-heading h1 {
+        font-size: 40px;
+        padding-bottom: 10%;
+    }
+
+    .about-text h2,
+    .about-text p,
+    ul {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .service-list {
+        grid-template-columns: 1fr; 
+        padding: 0 5%;
     }
 
     .contact h2 {
@@ -296,31 +346,85 @@ ul {
     .contact-text {
         font-size: 20px;
     }
-    .about {
-        margin-top: 60px; /* Increase the top margin for more space above the About section */
-        margin-bottom: 20px; /* Add margin at the bottom of the About section */
-    }
-
-    .home-sci {
-        margin-top: 60px; /* Add top margin to the social media icons */
-    }
-}
+} 
 
 @media (max-width: 576px) {
+    .header {
+        padding: 10px 5%;
+    }
+
     .navbar a {
-        font-size: 18px; /* Adjust navbar font size */
+        font-size: 16px; /* Adjust navbar font size */
     }
 
     .home-content h1 {
-        font-size: 30px; /* Reduce heading size */
+        font-size: 28px; /* Reduce heading size */
     }
 
     .home-content h3 {
-        font-size: 24px; /* Reduce subheading size */
+        font-size: 22px; /* Reduce subheading size */
+    }
+
+    .home-sci {
+        margin-top: 60px; /* Add space above social icons */
     }
 
     img {
         width: 100%; /* Make image full width on small screens */
         height: auto; /* Maintain aspect ratio */
     }
+
+    .about {
+        padding: 20px 5%;
+        margin-top: 90px; /* Additional space on top for extra-small screens */
+    }
+    .about-heading h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .about-text h2,
+    .about-text p,
+    ul {
+        font-size: 16px;
+    }
+
+    .sub-title h2 {
+        font-size: 35px;
+    }
+
+    .sub-title p {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .contact h2 {
+        font-size: 22px;
+    }
+
+    .contact-text {
+        font-size: 18px;
+    }
 }
+@media (max-width: 992px) and (min-width: 768px) {
+    .about {
+        grid-template-columns: 1fr; /* Switch to single-column layout */
+        padding: 20px 10%; /* Reduce padding for better alignment */
+        margin-top: 60px;
+        text-align: center;
+    }
+    .about-heading h1 {
+        font-size: 40px; /* Adjust heading font size */
+        margin-bottom: 15px;
+    }
+    .about-heading h1 span {
+        color: aqua;
+    }
+    .about-text h2,
+    .about-text p,
+    ul {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
